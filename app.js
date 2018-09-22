@@ -4,7 +4,7 @@ const app = express();
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
-const checkAuth = require('./api/auth/checkAuth');
+const checkAuth = require('./api/middleware/checkAuth');
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/user');
